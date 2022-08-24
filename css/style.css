@@ -18,24 +18,21 @@ h1{
     /* margin externo */
     margin-left: 2px;
     margin-right: 2px;
-    /* bordes / defino 3 valores: tipo de borde / grosor y color */
-    border-bottom: solid 2px rgb(7, 25, 128);
     /* Flexbox */
     display: flex;
     flex-direction: row;
     
     
 }
-h2{
-    color: rgba(208, 135, 245, 0.986);
-    text-align: right;
-    /* Margen externo */
-    margin-right: 15px;
-    /* Flexbox */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
+.navbar{
+    background: linear-gradient(black, rgb(53, 51, 51));
+    color: cornflowerblue;
+     /* bordes / defino 3 valores: tipo de borde / grosor y color */
+    background-color: black ;
+    border-bottom: solid 2px rgb(7, 25, 128);
+}
+.nav-link{
+    color: aliceblue;
 }
 h3{
     color: rgb(159, 149, 226); 
@@ -47,21 +44,22 @@ h3{
     justify-content: space-around;
 }
 /* Clases */
-.azul{
-    background: linear-gradient(black, rgb(53, 51, 51));
-    color: cornflowerblue;
-    background-color: black ;
-}
 .navegador{
     color: white;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px;
     padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    
+    border-radius: 10px;   
+}
+.btn{
+color: aliceblue;
+border-color: aliceblue;
+}
+.btn:hover{
+    color:white;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
 }
 .lista_animes{
     width: 100%;
@@ -115,6 +113,19 @@ h3{
         grid-template-columns: repeat(1, 100px);
     }
 }
+.carousel-inner{
+    height: 600px;
+}
+.carousel-item{
+width: 100%;
+height: 500px;
+
+  
+}
+.d-block{
+    height: 600px;
+    
+} 
 .p1{
     width: 200px;
     height: 200px;
@@ -388,6 +399,7 @@ h3{
     background-size: cover;
 }
 .parrafo{
+    color: aliceblue;
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 10px;
@@ -421,6 +433,8 @@ ul li{
 
 }
 .footer{
+    list-style: none;
+    color: aliceblue;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     padding-top: 20px;
