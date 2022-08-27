@@ -24,6 +24,16 @@ h1{
     
     
 }
+h3{
+    color: cornflowerblue; 
+    padding-bottom: 10px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Clases */
 .navbar{
     background: linear-gradient(black, rgb(53, 51, 51));
     color: cornflowerblue;
@@ -34,16 +44,6 @@ h1{
 .nav-link{
     color: aliceblue;
 }
-h3{
-    color: rgb(159, 149, 226); 
-    padding-bottom: 10px;
-    /* Flexbox */
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-/* Clases */
 .navegador{
     color: white;
     background-color: black;
@@ -61,15 +61,6 @@ border-color: aliceblue;
     background-color: cornflowerblue;
     border-color: cornflowerblue;
 }
-.lista_animes{
-    width: 100%;
-    height: 250px;
-    background-color: darkslateblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-around;
-}
 .lista_animes2{
     background-color: darkslateblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -80,17 +71,7 @@ border-color: aliceblue;
     gap: 20px;
     justify-content: space-evenly;
 }
-/* Media Queries */
-@media screen and (max-width: 768px){
-    .lista_animes2{
-     grid-template-columns: repeat(2, 100px);
-    }
-}
-    @media screen and (max-width: 480px){
-        .lista_animes2{
-            grid-template-columns: repeat(1, 100px);
-        }
-    }
+
 .lista_animes3{
     width: 100%;
     background-color: darkslateblue;
@@ -101,17 +82,6 @@ border-color: aliceblue;
     row-gap: 5px;
     gap: 20px;
     justify-content: space-evenly;
-}
-/* Media Queries */
-@media screen and (max-width: 768px){
-    .lista_animes3{
-     grid-template-columns: repeat(2, 100px);
-    }
-}
-@media screen and (max-width: 480px){
-    .lista_animes3{
-        grid-template-columns: repeat(1, 100px);
-    }
 }
 .carousel-inner{
     height: 600px;
@@ -441,4 +411,27 @@ ul li{
     /* Flexbox */
     display: flex;
     flex-direction: column;
+}
+/* Media Queries */
+@media screen and (max-width: 768px){
+    .lista_animes2{
+     grid-template-columns: repeat(2, 100px);
+    }
+}
+    @media screen and (max-width: 480px){
+        .lista_animes2{
+            grid-template-columns: repeat(1, 100px);
+        }
+    }
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+    .lista_animes3{
+     grid-template-columns: repeat(2, 100px);
+    }
+}
+@media screen and (max-width: 480px){
+    .lista_animes3{
+        grid-template-columns: repeat(1, 100px);
+    }
 }
