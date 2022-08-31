@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(41, 40, 38);
+    h1{
+        color:cornflowerblue;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* margin externo */
+    margin-left: 2px;
+    margin-right: 2px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    }
+
+}
+nav{
+        background: linear-gradient(black, rgb(53, 51, 51));
+        color: cornflowerblue;
+         /* bordes / defino 3 valores: tipo de borde / grosor y color */
+        background-color: black ;
+        border-bottom: solid 2px rgb(7, 25, 128);
+.nav-link{
+    color: aliceblue;
+}
+        .btn{
+color: aliceblue;
+border-color: aliceblue;
+}
+.btn:hover{
+    color:white;
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul{
+    list-style: none;
+    li{
+        color: aliceblue;
+        
+         a{
+            text-decoration: none;
+          
+        }
+    }
+}
+footer{
+    list-style: none;
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    padding-top: 20px;
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+}
