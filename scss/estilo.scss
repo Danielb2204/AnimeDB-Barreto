@@ -1,25 +1,40 @@
+@import "fonts";
+@import "bg";
+@import "size";
+@import "misc";
+$estilos: (
+    color: rgb(41, 40, 38),
+    centro: center,
+    tfuente: 15px,
+    1rem: 0.5rem
+);
+@mixin size($alto, $ancho){
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(41, 40, 38);
+    @include size(100vh, 100%);
+    background-color:$bg-color-body;
     h1{
         color:cornflowerblue;
     text-align: center;
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* margin externo */
-    margin-left: 2px;
-    margin-right: 2px;
+    font-size:$font-size-xl;
+    font-family: $font-family;
     /* Flexbox */
-    display: flex;
+    display: $dF;
     flex-direction: row;
     }
 
 }
 nav{
-        background: linear-gradient(black, rgb(53, 51, 51));
+        background: $bg-color-nav;
         color: cornflowerblue;
-         /* bordes / defino 3 valores: tipo de borde / grosor y color */
-        background-color: black ;
-        border-bottom: solid 2px rgb(7, 25, 128);
+        border-bottom: $border;
 .nav-link{
     color: aliceblue;
 }
@@ -27,19 +42,27 @@ nav{
 color: aliceblue;
 border-color: aliceblue;
 }
-.btn:hover{
+.btn--search{
+    @extend .btn;
     color:white;
     background-color: cornflowerblue;
     border-color: cornflowerblue;
 }
+
+
+
 }
 .formulario{
-    display: flex;
+    display: $dF;
     flex-direction: column;
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
     align-items: baseline;
     justify-content: center;
     color: aliceblue;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font-family;
+    font-size: map-get($estilos, tfuente);
 }
 
 ul{
@@ -56,10 +79,22 @@ ul{
 footer{
     list-style: none;
     color: aliceblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding-top: 20px;
+    font-family: $font-family2;
+    font-size: $font-size-sm;
+    padding-top: $padding-4;
     /* Flexbox */
-    display: flex;
+    display: $dF;
     flex-direction: column;
+}
+
+$menu: (
+    blue: rgb(10, 10, 250),
+   violet: rgb(139, 28, 243),
+   pink: rgb(240, 143, 180) 
+);
+
+@each $item, $color in $menu{
+    .color-#{$item} {
+        background-color: $color;  
+    } 
 }

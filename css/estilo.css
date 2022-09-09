@@ -1,13 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
 body {
   background-color: #292826; }
   body h1 {
     color: cornflowerblue;
     text-align: center;
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /* margin externo */
-    margin-left: 2px;
-    margin-right: 2px;
+    font-size: 3.5em;
+    font-family: "trebuchet MS", sans-serif;
     /* Flexbox */
     display: flex;
     flex-direction: row; }
@@ -15,15 +17,13 @@ body {
 nav {
   background: linear-gradient(black, #353333);
   color: cornflowerblue;
-  /* bordes / defino 3 valores: tipo de borde / grosor y color */
-  background-color: black;
   border-bottom: solid 2px #071980; }
   nav .nav-link {
     color: aliceblue; }
-  nav .btn {
+  nav .btn, nav .btn--search {
     color: aliceblue;
     border-color: aliceblue; }
-  nav .btn:hover {
+  nav .btn--search {
     color: white;
     background-color: cornflowerblue;
     border-color: cornflowerblue; }
@@ -31,10 +31,14 @@ nav {
 .formulario {
   display: flex;
   flex-direction: column;
+  background-color: #292826;
+  text-align: center;
+  padding: 0.5rem;
   align-items: baseline;
   justify-content: center;
   color: aliceblue;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  font-family: "trebuchet MS", sans-serif;
+  font-size: 15px; }
 
 ul {
   list-style: none; }
@@ -46,9 +50,18 @@ ul {
 footer {
   list-style: none;
   color: aliceblue;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
+  font-family: "Haettenschweiler", sans-serif;
+  font-size: 1.5em;
   padding-top: 20px;
   /* Flexbox */
   display: flex;
   flex-direction: column; }
+
+.color-blue {
+  background-color: #0a0afa; }
+
+.color-violet {
+  background-color: #8b1cf3; }
+
+.color-pink {
+  background-color: #f08fb4; }

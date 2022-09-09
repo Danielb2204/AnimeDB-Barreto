@@ -44,14 +44,7 @@ h3{
 .nav-link{
     color: aliceblue;
 }
-.navegador{
-    color: white;
-    background-color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;   
-}
+
 .btn{
 color: aliceblue;
 border-color: aliceblue;
@@ -274,95 +267,6 @@ height: 500px;
     background-size: cover;
 }
 .b10{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/trinity_seven.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.c1{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/kaneki-ken-wall.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.c2{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/bleach.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.c3{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/Kimetsu.no.Yaiba.full.s2.jpg);
-    background-position: center;
-    background-size: cover;  
-    display: flex;
-    flex-direction: column;
-}
-.c4{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/enen_no\ _shouboutai.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.c5{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/HD-wallpaper-hunter-x-hunter.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.c6{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/big_order.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.c7{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/fuuto-tantei.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.c8{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/no_game_no_life.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.c9{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background-image: url(../img/Summertime.Render.full.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.c10{
     width: 100%;
     height: 100%;
     text-align: center;
