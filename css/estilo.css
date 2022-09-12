@@ -66,6 +66,10 @@ nav {
   
     
   }
+  .d-block{
+    height: 600px;
+      
+} 
   .parrafo{
     color: aliceblue;
     font-size: 25px;
