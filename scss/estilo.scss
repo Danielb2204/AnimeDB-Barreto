@@ -29,6 +29,15 @@ body{
     display: $dF;
     flex-direction: row;
     }
+    h3{
+        color: cornflowerblue; 
+        padding-bottom: $padding-3;
+        /* Flexbox */
+        display: $dF;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
 }
 nav{
@@ -48,10 +57,8 @@ border-color: aliceblue;
     background-color: cornflowerblue;
     border-color: cornflowerblue;
 }
-
-
-
 }
+
 .formulario{
     display: $dF;
     flex-direction: column;
