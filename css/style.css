@@ -36,6 +36,16 @@ nav {
     background-color: cornflowerblue;
     border-color: cornflowerblue; }
 
+    .carousel-inner{
+      height: 600px;
+      background-size: contain;
+  }
+  .carousel-item img{
+  width: 100%;
+  height: 600px;
+  background-size: contain;
+  }
+
 .formulario {
   display: flex;
   flex-direction: column;
@@ -55,6 +65,219 @@ ul {
     ul li a {
       text-decoration: none; }
 
+div section p {
+  color: aliceblue;
+  font-family: "Haettenschweiler", sans-serif;
+  font-size: 2em; }
+
+  .lista_animes2{
+    background-color: darkslateblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 200px);
+    row-gap: 5px;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.lista_animes3{
+    width: 100%;
+    background-color: darkslateblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows:repeat(3, 200px) ;
+    row-gap: 5px;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+  .p1{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.7;
+    transition: all 1s;
+}
+.p1:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.p2{
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;  
+    opacity: 0.7;  
+    transition: all 1s;
+}
+.p2:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+/* Listas de Animes */
+.a1{
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    background-image: url(../img/Hataraku.Maou-sama!.jpg);
+    background-size: cover;
+}
+.a2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/fuuto-tantei.jpg);
+    background-size: cover;
+}
+.a3{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/dr.stone.jpg);
+    background-size: cover;  
+}
+.a4{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/hoshinsamidare.jpg);
+    background-size: cover;
+}
+.a5{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/Isekai.Ojisan.full.jpg);
+    background-size: cover;
+}
+.a6{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/Kuro-no-Shoukanshi.jpg);
+    background-size: cover;
+}
+.a7{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/overlordIV_key.jpg);
+    background-size: cover;
+}
+.a8{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/RWBY.jpg);
+    background-size: cover;
+}
+.a9{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/shadowhouse.jpg);
+    background-size: cover;
+}
+.a10{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/Yofukashi-no-Uta-manga-1-jp.jpg);
+    background-size: cover;
+}
+.b1{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/attack_on_titan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/big_order.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b3{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/bleach.jpg);
+    background-position: center;
+    background-size: cover;  
+}
+.b4{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/enen_no\ _shouboutai.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b5{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/HD-wallpaper-hunter-x-hunter.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b6{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/kaneki-ken-wall.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b7{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/Kimetsu.no.Yaiba.full.s2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b8{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/no_game_no_life.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b9{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/Summertime.Render.full.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.b10{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../img/trinity_seven.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
 footer {
   list-style: none;
   color: aliceblue;
@@ -73,3 +296,27 @@ footer {
 
 .color-pink {
   background-color: #f08fb4; }
+
+  /* Media Queries */
+@media screen and (max-width: 768px){
+  .lista_animes2{
+   grid-template-columns: repeat(2, 100px);
+  }
+}
+  @media screen and (max-width: 480px){
+      .lista_animes2{
+          grid-template-columns: repeat(1, 100px);
+      }
+  }
+
+/* Media Queries */
+@media screen and (max-width: 768px){
+  .lista_animes3{
+   grid-template-columns: repeat(2, 100px);
+  }
+}
+@media screen and (max-width: 480px){
+  .lista_animes3{
+      grid-template-columns: repeat(1, 100px);
+  }
+}

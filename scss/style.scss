@@ -83,6 +83,15 @@ ul{
         }
     }
 }
+div{
+    section{
+        p{
+            color: aliceblue;
+            font-family: $font-family2;
+            font-size: $font-size-md; 
+        }
+    }
+}
 footer{
     list-style: none;
     color: aliceblue;
