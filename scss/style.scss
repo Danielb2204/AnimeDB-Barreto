@@ -47,16 +47,7 @@ nav{
 .nav-link{
     color: aliceblue;
 }
-        .btn{
-color: aliceblue;
-border-color: aliceblue;
-}
-.btn--search{
-    @extend .btn;
-    color:white;
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
-}
+
 }
 
 .formulario{

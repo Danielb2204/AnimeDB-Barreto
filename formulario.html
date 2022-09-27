@@ -12,90 +12,89 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-        <!-- tutilo de la pag -->
-        <header>
-                   <!-- Barra de menú de navegación -->
+
+  <main>
+            <!-- tutilo de la pag -->
+            <header>
+              <!-- Barra de menú de navegación -->
 
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <h1 class="azul" id="tituloPrincipal">AnimeDB</h1>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./directorio_anime.html">Directorio anime</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./animes_en_emision.html">Animes en emisión</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./formulario.html">Formulario de contacto</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Buscar anime..." aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-          <ul>
-            <li class="menu-item color-blue">
-              <a href="#">AnimeDB</a>
-            </li>
-            <li class="menu-item color-violet">
-              <a href="#">El mejor lugar</a>
-            </li>
-            <li class="menu-item color-pink">
-              <a href="#">Para ver Anime!</a>
-            </li>
-          </ul>
-        </header>
-      
+     <nav class="navbar navbar-expand-lg">
+       <div class="container-fluid">
+           <h1 class="azul" id="tituloPrincipal">AnimeDB</h1>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./directorio_anime.html">Directorio anime</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./animes_en_emision.html">Animes en emisión</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="./formulario.html">Formulario de contacto</a>
+             </li>
+             <li>
+               <a class="nav-link" href="./nosotros.html">Nosotros</a>
+             </li>
+           </ul>
+           
+         </div>
+       </div>
+     </nav>
+     <ul>
+       <li class="menu-item color-blue">
+         <a href="#">AnimeDB</a>
+       </li>
+       <li class="menu-item color-violet">
+         <a href="#">El mejor lugar</a>
+       </li>
+       <li class="menu-item color-pink">
+         <a href="#">Para ver Anime!</a>
+       </li>
+     </ul>
+   </header>
+ 
 
-        <form action="https://formspree.io/f/xqkjkeev"
-        method="POST"> 
-            <div class="formulario"> 
-                <label for="name">Nombre</label> 
-                <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required> 
-            </div>
-            <div class="formulario"> 
-                <label for="name">Apellido</label> 
-                <input type="text" id="name" name="visitor_name" placeholder="Apellido" pattern=[A-Z\sa-z]{3,20} required> 
-            </div> 
-            <div class="formulario"> 
-                <label for="email">Correo electrónico</label> 
-                <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required> 
-            </div> 
-            <div class="formulario"> 
-                <label for="department-selection">País</label> 
-                <select id="department-selection" name="concerned_department" required> 
-                    <option value="">Seleciona un país</option> 
-                    <option value="país">Argentina</option> 
-                    <option value="país">Venezuela</option> 
-                    <option value="país">Uruguay</option>
-                </select> 
-            </div> 
-            <div class="formulario"> 
-                <label for="title">Motivo de contacto</label> 
-                <input type="text" id="title" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}> 
-            </div> 
-            <div class="formulario"> 
-                <label for="message">Solicitud</label> 
-                <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí." required></textarea> 
-            </div> 
-            <button type="submit">Enviar mensaje</button>
-        </form>
+   <form action="https://formspree.io/f/xqkjkeev"
+   method="POST"> 
+       <div class="formulario"> 
+           <label for="name">Nombre</label> 
+           <input type="text" id="name" name="visitor_name" placeholder="Nombre" pattern=[A-Z\sa-z]{3,20} required> 
+       </div>
+       <div class="formulario"> 
+           <label for="name">Apellido</label> 
+           <input type="text" id="name" name="visitor_name" placeholder="Apellido" pattern=[A-Z\sa-z]{3,20} required> 
+       </div> 
+       <div class="formulario"> 
+           <label for="email">Correo electrónico</label> 
+           <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required> 
+       </div> 
+       <div class="formulario"> 
+           <label for="department-selection">País</label> 
+           <select id="department-selection" name="concerned_department" required> 
+               <option value="">Seleciona un país</option> 
+               <option value="país">Argentina</option> 
+               <option value="país">Venezuela</option> 
+               <option value="país">Uruguay</option>
+           </select> 
+       </div> 
+       <div class="formulario"> 
+           <label for="title">Motivo de contacto</label> 
+           <input type="text" id="title" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}> 
+       </div> 
+       <div class="formulario"> 
+           <label for="message">Solicitud</label> 
+           <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí." required></textarea> 
+       </div> 
+       <button type="submit">Enviar mensaje</button>
+   </form>
+  </main>
         <footer class="footer">
          <div>
           <ul>

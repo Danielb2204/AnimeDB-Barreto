@@ -71,31 +71,33 @@ div section p {
   font-size: 2em; }
 
   .lista_animes2{
-    background-color: darkslateblue;
+    width: 100%;
+    margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 300px);
     row-gap: 5px;
-    gap: 20px;
-    justify-content: space-evenly;
+    gap: 50px;
+    justify-content: space-around;
 }
 
 .lista_animes3{
+    
     width: 100%;
-    background-color: darkslateblue;
+    margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: grid;
-    grid-template-columns: repeat(3, 150px);
-    grid-template-rows:repeat(3, 200px) ;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows:repeat(3, 300px) ;
     row-gap: 5px;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-evenly;
 }
 
   .p1{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 300px;
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
@@ -110,8 +112,8 @@ div section p {
     opacity: 1;
 }
 .p2{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 300px;
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
