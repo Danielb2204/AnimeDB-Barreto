@@ -1,2 +1,13 @@
 $bg-color-body: rgb(41, 40, 38);
 $bg-color-nav: linear-gradient(black, rgb(53, 51, 51));
+$menu: (
+   blue: rgb(47, 47, 231),
+   violet: rgb(139, 28, 243),
+   pink: rgb(240, 143, 180) 
+);
+
+@each $item, $color in $menu{
+    .color-#{$item} {
+        background-color: $color;  
+    } 
+}

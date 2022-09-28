@@ -1,107 +1,14 @@
-@import "fonts";
-@import "bg";
-@import "size";
-@import "misc";
-$estilos: (
-    color: rgb(41, 40, 38),
-    centro: center,
-    tfuente: 15px,
-    1rem: 0.5rem
-);
-@mixin size($alto, $ancho){
-
-}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body{
-    @include size(100vh, 100%);
-    background-color:$bg-color-body;
-    h1{
-        color:cornflowerblue;
-    text-align: center;
-    font-size:$font-size-xl;
-    font-family: $font-family;
-    /* Flexbox */
-    display: $dF;
-    flex-direction: row;
-    }
-    h3{
-        color: cornflowerblue; 
-        padding-bottom: $padding-3;
-        /* Flexbox */
-        display: $dF;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-}
-nav{
-        background: $bg-color-nav;
-        color: cornflowerblue;
-        border-bottom: $border;
-.nav-link{
-    color: aliceblue;
-}
-
-}
-
-.formulario{
-    display: $dF;
-    flex-direction: column;
-    background-color: map-get($estilos, color);
-    text-align: map-get($estilos, centro);
-    padding: map-get($estilos, 1rem);
-    align-items: baseline;
-    justify-content: center;
-    color: aliceblue;
-    font-family: $font-family;
-    font-size: map-get($estilos, tfuente);
-}
-
-ul{
-    list-style: none;
-    li{
-        color: aliceblue;
-        
-         a{
-            text-decoration: none;
-          
-        }
-    }
-}
-div{
-    section{
-        p{
-            color: aliceblue;
-            font-family: $font-family2;
-            font-size: $font-size-md; 
-        }
-    }
-}
-footer{
-    list-style: none;
-    color: aliceblue;
-    font-family: $font-family2;
-    font-size: $font-size-sm;
-    padding-top: $padding-4;
-    /* Flexbox */
-    display: $dF;
-    flex-direction: column;
-}
-
-$menu: (
-    blue: rgb(10, 10, 250),
-   violet: rgb(139, 28, 243),
-   pink: rgb(240, 143, 180) 
-);
-
-@each $item, $color in $menu{
-    .color-#{$item} {
-        background-color: $color;  
-    } 
-}
+@import "fonts";
+@import "size";
+@import "misc";
+@import "bg";
+@import "body";
+@import "nav";
+@import "formulario";
+@import "footer";
+@import "media-queries";

@@ -3,3 +3,12 @@ $dF: flex;
 $dB: block;
 $dIB: inline-block;
 $border: solid 2px rgb(7, 25, 128);
+$estilos: (
+    color: rgb(41, 40, 38),
+    centro: center,
+    tfuente: 15px,
+    1rem: 0.5rem
+);
+@mixin size($alto, $ancho){
+
+}

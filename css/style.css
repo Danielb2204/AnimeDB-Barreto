@@ -3,13 +3,20 @@
   margin: 0;
   box-sizing: border-box; }
 
-body {
-  background-color: #292826;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.color-blue {
+  background-color: #2f2fe7; }
 
-}
+.color-violet {
+  background-color: #8b1cf3; }
+
+.color-pink {
+  background-color: #f08fb4; }
+
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #292826; }
   body h1 {
     color: cornflowerblue;
     text-align: center;
@@ -27,40 +34,57 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; }
 
-nav {
-  background: linear-gradient(black, #353333);
-  color: cornflowerblue;
-  border-bottom: solid 2px #071980; }
-  nav .nav-link {
-    color: aliceblue; }
-  nav .btn, nav .btn--search {
-    color: aliceblue;
-    border-color: aliceblue; }
-  nav .btn--search {
-    color: white;
-    background-color: cornflowerblue;
-    border-color: cornflowerblue; }
+.carousel-inner {
+  height: 600px;
+  background-size: contain; }
 
-    .carousel-inner{
-      height: 600px;
-      background-size: contain;
-  }
-  .carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 600px;
-  background-size: contain;
-  }
+  background-size: contain; }
 
-.formulario {
-  display: flex;
-  background-color: #292826;
-  text-align: center;
-  
-  align-items: center;
-  justify-content: center;
+ul {
+  list-style: none; }
+
+ul li {
+  color: aliceblue; }
+
+ul li a {
+  text-decoration: none; }
+
+div section p {
   color: aliceblue;
-  font-family: "trebuchet MS", sans-serif;
-  font-size: 15px; }
+  font-family: "Haettenschweiler", sans-serif;
+  font-size: 2em; }
+
+.container-img {
+  width: 100%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 350px);
+  grid-gap: 20px;
+  justify-content: space-around; }
+
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%; }
+
+.container-img .box-img img {
+  width: 70%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: all 1s; }
+
+.container-img .box-img img:hover {
+  transform: scale(1.1);
+  opacity: 1; }
 
 ul {
   list-style: none; }
@@ -74,66 +98,55 @@ div section p {
   font-family: "Haettenschweiler", sans-serif;
   font-size: 2em; }
 
-.container-img{
-  width: 100%;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  margin-left: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-  grid-template-rows:repeat(3, 350px );
-  grid-gap: 20px;
+nav {
+  background: linear-gradient(black, #353333);
+  color: cornflowerblue;
+  border-bottom: solid 2px #071980; }
+  nav .nav-link {
+    color: aliceblue; }
+
+.formulario {
+  height: 60px;
+  display: flex;
+  background-color: #292826;
+  text-align: center;
+  align-items: center;
   justify-content: center;
-}
-.container-img .box-img figure{
-  width: 100%;
-  height: 100%;
-}
-.container-img .box-img img{
-  width: 70%;
-  height: 100%;
-  border-radius: 15px;
-  object-fit: cover;
-  opacity: 0.7;  
-    transition: all 1s;
-}
-.container-img .box-img img:hover{
-  transform: scale(1.1);
-  opacity: 1;
-}
+  color: aliceblue;
+  font-family: "trebuchet MS", sans-serif;
+  font-size: 20px; }
 
 footer {
+  width: 100%;
   list-style: none;
   color: aliceblue;
-  font-family: "Haettenschweiler", sans-serif;
+  background-color: #0c0a0c;
   font-size: 1.5em;
   padding-top: 20px;
   /* Flexbox */
   display: flex;
   flex-direction: column; }
+  footer .box a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 1s ease; }
+  footer .box a:hover {
+    color: cornflowerblue; }
 
-.color-blue {
-  background-color: #0a0afa; }
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container-img {
+    grid-template-columns: repeat(2, 250px);
+    align-items: center; } }
 
-.color-violet {
-  background-color: #8b1cf3; }
-
-.color-pink {
-  background-color: #f08fb4; }
-
-  /* Media Queries */
-@media screen and (max-width: 768px){
-  .container-img{
-    
-   grid-template-columns: repeat(2, 250px);
-   align-items: center;
-  }
-}
-  @media screen and (max-width: 480px){
-      .container-img{
-        
-          grid-template-columns: repeat(1, 200px);
-          align-items: center;
-      }
-  }
+@media screen and (max-width: 480px) {
+  .container-img {
+    grid-template-columns: repeat(1, 200px);
+    align-items: center; } }

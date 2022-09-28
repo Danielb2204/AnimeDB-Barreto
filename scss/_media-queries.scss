@@ -1,0 +1,15 @@
+  /* Media Queries */
+  @media screen and (max-width: 768px){
+    .container-img{
+      
+     grid-template-columns: repeat(2, 250px);
+     align-items: center;
+    }
+  }
+    @media screen and (max-width: 480px){
+        .container-img{
+          
+            grid-template-columns: repeat(1, 200px);
+            align-items: center;
+        }
+    }
