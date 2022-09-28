@@ -3,12 +3,14 @@ footer{
     list-style: none;
     color: aliceblue;
     background-color: rgb(12, 10, 12);
+    font-family: $font-family;
     font-size: $font-size-sm;
     padding-top: $padding-4;
     /* Flexbox */
     display: $dF;
     flex-direction: column;
-    .box a{
+    align-items: center;
+     .box a{
         display: inline-block;
         text-decoration: none;
         width: 45px;
@@ -17,10 +19,11 @@ footer{
         color: #fff;
         margin-right: 10px;
         background-color: rgb(0, 0, 0);
+        border-radius: 20px;
         text-align: center;
         transition: all 1s ease;
     }  
-    .box a:hover{
+   .box a:hover{
         color: cornflowerblue;
     }
 }

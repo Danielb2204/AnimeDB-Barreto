@@ -4,12 +4,39 @@
       
      grid-template-columns: repeat(2, 250px);
      align-items: center;
+     padding-left: 40px;
+
     }
+    .container-card{
+      
+        grid-template-columns: repeat(2, 350px);
+        align-items: center;
+        padding-right: 50px;
+       }
+       .container-trailers{
+      
+        grid-template-columns: repeat(2, 350px);
+        align-items: center;
+        padding-right: 50px;
+       }
   }
     @media screen and (max-width: 480px){
         .container-img{
           
             grid-template-columns: repeat(1, 200px);
             align-items: center;
+            padding-left: 45px;
+        }
+        .container-card{
+          
+            grid-template-columns: repeat(1, 300px);
+            align-items: center;
+            padding-right: 70px;
+        }
+        .container-trailers{
+          
+            grid-template-columns: repeat(1, 300px);
+            align-items: center;
+            padding-right: 70px;
         }
     }
