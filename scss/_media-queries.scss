@@ -9,15 +9,16 @@
     }
     .container-card{
       
-        grid-template-columns: repeat(2, 350px);
+        grid-template-columns: repeat(2, 300px);
         align-items: center;
-        padding-right: 50px;
+        padding-right: 80px;
+       
        }
        .container-trailers{
       
         grid-template-columns: repeat(2, 350px);
         align-items: center;
-        padding-right: 50px;
+        padding-left: 50px;
        }
   }
     @media screen and (max-width: 480px){
@@ -28,7 +29,6 @@
             padding-left: 45px;
         }
         .container-card{
-          
             grid-template-columns: repeat(1, 300px);
             align-items: center;
             padding-right: 70px;
@@ -37,6 +37,6 @@
           
             grid-template-columns: repeat(1, 300px);
             align-items: center;
-            padding-right: 70px;
+            padding-right: 60px;
         }
     }
